@@ -1,7 +1,11 @@
 alias vi "vim"
 
+set PATH /usr/local/bin $PATH
+set PATH /usr/local/go/bin $PATH
 set PATH ~/bin $PATH
 set PATH ~/Library/Haskell/bin $PATH
+
+set -xg GOPATH /usr/local/go
 
 set -xg __fish_git_prompt_showdirtystate 1
 set -xg __fish_git_prompt_showuntrackedfiles 1
@@ -29,4 +33,4 @@ function fish_prompt -d "Write out the prompt"
   end
 end
 
-set -x EDITOR vim
+set -xg EDITOR vim
