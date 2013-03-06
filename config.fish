@@ -34,3 +34,8 @@ function fish_prompt -d "Write out the prompt"
 end
 
 set -xg EDITOR vim
+
+# shit for estately config so emails work
+
+set -xg RAILS_PORT 3000
+set -xg DEV_EMAILS_TO "tom@estately.com"
